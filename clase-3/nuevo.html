@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nuevo producto</title>
+        <style>
+            body,html{
+                background: #f8f8f8;
+                padding: 10px 60px;
+            }
+
+            nav ul li{
+                display: inline-block;
+                margin: 20px;
+                list-style: none;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #555;
+                padding:20px;
+            }
+
+            nav ul li a:hover {
+                text-decoration: none;
+                color: #fff;
+                background: #555;
+                border-radius: 100px;
+            }
+
+            h1{
+                text-align: center;
+            }
+            input{
+                width: 95%;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            label{
+                color: #555;
+            }
+
+            button{
+                background: #555;
+                color: #fff;
+                padding: 20px 40px;
+            }
+        </style>
+    </head>
+    <body>  
+        <h1>Nuevo Producto</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Tienda</a>
+                </li>
+                <li>
+                    <a href="nuevo.html">Nuevo producto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <section>
+            <label for="">Nombre:</label>
+            <input type="text" placeholder="Nombre" id="name">
+    
+            <label for="">Descripcion:</label>
+            <input type="text" placeholder="Descripcion" id="desc">
+    
+            <label for="">Imagen del producto:</label>
+            <input type="text" placeholder="Imagen del producto" id="img">
+    
+            <label for="">Precio:</label>
+            <input type="number" placeholder="Precio" id="price">
+    
+            <button id="add">Agregar producto</button>
+        </section>
+
+        <script src="funcionesPrincipales.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

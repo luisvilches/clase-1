@@ -19,8 +19,23 @@ function renderList(){
     tareas.forEach(function(item,i){
         // creamos la etiqueta <li></li>
         let li = document.createElement('li');
+        // creamos la etiqueta span que contendra el boton de eliminar
+        let del = document.createElement('span');
+        // creamos la etiqueta span que contendra el texto
+        let text = document.createElement('span');
+        // creamos el boton de eliminar
+        let btn = document.createElement('button');
         // le asignamos un valor
-        li.innerHTML = item;
+        text.innerHTML = item;
+        btn.innerHTML = "x";
+        btn.classList.add('btn-delete');
+
+        btn.addEventListener('click', function(){
+            tareas.splice(tareas.indexOf(item),1);
+            renderList();
+        })
+        li.appendChild(btn);
+        li.appendChild(text);
         // insertamos la etiqueta en el DOM
         lista.appendChild(li);
     });

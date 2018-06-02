@@ -5,17 +5,80 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Otro nombre</title>
+
+        <style>
+            body,html{
+                width: 500px;
+                margin: auto;
+                padding-top:40px; 
+            }
+
+            header{
+                padding: 20px;
+                height: auto;
+                background: #16a085;
+                box-shadow: 0px 5px 5px #ccc;
+                
+            }
+
+            header h3{
+                text-align: center;
+                color: #f8f8f8;
+            }
+
+            input{
+                width: 91.2%;
+                padding: 20px;
+            }
+
+            #add{
+                padding: 15px 0px;
+                width: 100%;
+                border:1px solid #ccc;
+                background: #fff;
+                margin: 0;
+            }
+
+            ol{
+                margin:0;
+                border:1px solid #ccc;
+                min-height: 400px;
+                padding: 10px;
+                background: #f8f8f8;
+            }
+            ol li{
+                list-style: none;
+                border:1px solid #ccc;
+                padding: 20px;
+                background: #fff;
+                margin-bottom: 10px;
+                position: relative;
+            }
+
+            ol li .btn-delete{
+                position: absolute;
+                right: 0;
+                top:8px;
+                margin-right: 10px;
+                border:none;
+                background: #ec0000;
+                color: #fff;
+                border-radius: 5px;
+                padding: 15px 20px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Mi lista de tareas</h1>
-        <hr>
-        <br>
-        <label for="">Ingresar tarea:</label>
-        <input type="text" id="box">
-        <button id="add">Agregar</button>
-        <br>
-        <br>
-        <ol id="lista"></ol>
+        <header>
+            <h3>Mi lista de tareas</h3>
+        </header>
+        <section>
+            <input type="text" id="box" placeholder="Ingresar tarea">
+            <button id="add">Agregar</button>
+        </section>
+        <section>
+            <ol id="lista"></ol>
+        </section>
         <script src="main.js"></script>
         <script src="main2.js"></script>
     </body>
