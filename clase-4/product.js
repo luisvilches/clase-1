@@ -31,6 +31,7 @@ Product.prototype.save = function(){
         precio:this.price
     };
 
+    
     this.storage.push(producto);
     this.setStorage(this.storage);
 }

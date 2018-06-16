@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nuevo</title>
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
 </head>
 <body>
+    <h1>Nuevo producto</h1>
     <nav>
         <ul>
             <li>
@@ -18,12 +19,23 @@
             </li>
         </ul>
     </nav>
-    <ul id="app"></ul>
+    <br>
+    <section>
+        <label for="">Nombre:</label>
+        <input type="text" placeholder="Nombre" id="name">
+
+        <label for="">Descipcion:</label>
+        <input type="text" placeholder="Descipcion" id="desc">
+
+        <label for="">Imagen:</label>
+        <input type="text" placeholder="Imagen" id="img">
+
+        <label for="">Precio:</label>
+        <input type="number" placeholder="Precio" id="price">
+
+        <button id="add">Agregar nuevo producto</button>
+    </section>
     <script src="product.js"></script>
-    <script src="render.js"></script>
     <script src="main.js"></script>
-    <script>
-        new Render(document.getElementById('app'));
-    </script>
 </body>
 </html>
