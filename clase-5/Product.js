@@ -28,7 +28,7 @@ class Product {
         this.storage.push({
             nombre:this.nombre,
             descripcion:this.descripcion,
-            image:this.imagen,
+            imagen:this.imagen,
             precio:this.precio
         });
         this.setStorage(this.storage);
