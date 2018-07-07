@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="formulario" onsubmit="return validacion()">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" id="">
+        <br>
+        <label for="">Edad:</label>
+        <input type="number" name="edad" id="">
+        <br>
+        <label for="">Email</label>
+        <input type="email" name="email" id="">
+        <br>
+        <label for="">Hombre </label>
+        <input type="radio" name="genero" id="" value="Hombre">
+        <label for="">Mujer </label>
+        <input type="radio" name="genero" id="" value="Mujer">
+        <br>
+        <label for="">Numero de teléfono</label>
+        <input type="text" name="telefono">
+        <br>
+        <label for="">Comuna</label>
+        <select name="comuna" id="">
+            <option value="">-- Seleccionar comuna --</option>
+            <option value="">Santiago</option>
+            <option value="">La Florida</option>
+            <option value="">San Bernardo</option>
+            <option value="">La Pintana</option>
+            <option value="">Recoleta</option>
+        </select>
+        <br>
+        <label for="">Terminos de contrato</label>
+        <input type="checkbox" name="terminos" value="Estoy de acuerdo" id="">
+        <br>
+         <label for="">Fecha de nacimiento</label>
+         <select name="dia" id="">
+             <option value="">Seleccionar dia</option>
+         </select>
+         <select name="mes" id="">
+             <option value="">Seleccionar mes</option>
+         </select>
+         <select name="anio" id="">
+             <option value="">Seleccionar año</option>
+         </select>
+         <br>
+         <br>
+         <button type="submit">Enviar</button>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
